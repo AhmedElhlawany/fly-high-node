@@ -11,7 +11,7 @@ const router = express.Router();
 
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000 || process.env.PORT;
 const JWT_SECRET = "your_jwt_secret_key"; 
 const RESET_TOKEN_SECRET = "your_reset_token_secret"; // Different secret for reset tokens
 const RESET_TOKEN_EXPIRY = 3600000; // 1 hour in milliseconds
