@@ -187,6 +187,9 @@ app.post("/api/forgot-password", async (req, res) => {
     html: `
       <p>You requested a password reset.</p>
       <p>Click <a href="${resetUrl}">here</a> to reset your password.</p>
+      <p><strong>if you are using the App</strong></p>
+      <p><strong>Password Reset Verification Code:</strong> ${resetToken}</p>
+      <p>Please copy this verification code and paste it into the mobile app to continue resetting your password.</p>
       <p>This link will expire in 1 hour.</p>
     `,
   };
@@ -856,9 +859,9 @@ app.post("/api/users/:id/bookings", authenticateToken, (req, res) => {
   if (req.user.id !== parseInt(id)) {
     return res.status(403).json({ error: "Unauthorized access" });
   }
-  const { flightId, adults, children } = req.body;
+  const {bFId, flightId, adults, children } = req.body;
 
-  if (!flightId || adults === undefined || children === undefined) {
+  if (!flightId || adults === undefined || children === undefined || bFId === undefined) {
     return res.status(400).json({ error: "flightId, adults, and children are required" });
   }
 
@@ -869,69 +872,63 @@ app.post("/api/users/:id/bookings", authenticateToken, (req, res) => {
   if (!flight) {
     return res.status(404).json({ error: "Flight not found" });
   }
-
-  user.bookedFlights.push({ ...flight, adults, children });
+flight.price = flight.price * (adults + (children / 2));
+  user.bookedFlights.push({ ...flight, adults, children, bFId });
   writeData(data);
 
   res.json({ message: "Flight booked", bookedFlights: user.bookedFlights });
 });
 
-// Cancel booking (protected)
-// app.post("/api/users/:id/cancel-booking", authenticateToken, (req, res) => {
-//   const { id } = req.params;
-//   if (req.user.id !== parseInt(id)) {
-//     return res.status(403).json({ error: "Unauthorized access" });
-//   }
-//   const { flightId } = req.body;
-
-//   if (!flightId) {
-//     return res.status(400).json({ error: "flightId is required" });
-//   }
-
-//   const data = readData();
-//   const user = data.users.find((u) => u.id === parseInt(id));
-
-//   if (!user) {
-//     return res.status(404).json({ error: "User not found" });
-//   }
-
-//   user.bookedFlights = user.bookedFlights.filter((f) => f.id !== parseInt(flightId));
-//   writeData(data);
-
-//   res.json({ message: "Booking cancelled", bookedFlights: user.bookedFlights });
-// });
+///////////////////
+/// cancel flights booking
 
 
 app.post("/api/users/:id/cancel-booking", authenticateToken, (req, res) => {
   const { id } = req.params;
-  const { flightId } = req.body;
+  const { bFId } = req.body;
 
-  // ✅ السماح فقط لصاحب الحساب أو الأدمن
+  console.log('Request body:', req.body); // Debug: Log the request body
+
+  // Check if bFId is provided and is a non-empty string
+  if (!bFId || typeof bFId !== 'string' || bFId.trim() === '') {
+    console.error('Invalid or missing bFId:', req.body.bFId);
+    return res.status(400).json({ error: 'bFId is required and must be a valid string' });
+  }
+
+  // Ensure user ID is authorized
   const isAdmin = req.user.email === "ahmedelhalawany429@gmail.com";
   if (req.user.id !== parseInt(id) && !isAdmin) {
+    console.error(`Unauthorized access attempt by user ${req.user.id} for user ${id}`);
     return res.status(403).json({ error: "Unauthorized access" });
   }
 
-  if (!flightId) {
-    return res.status(400).json({ error: "flightId is required" });
+  try {
+    const data = readData();
+    const user = data.users.find((u) => u.id === parseInt(id));
+
+    if (!user) {
+      console.error(`User not found: ${id}`);
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    const bookingFlight = user.bookedFlights.find((b) => b.bFId === bFId);
+    if (!bookingFlight) {
+      console.error(`Booking not found: bFId ${bFId} for user ${id}`);
+      return res.status(404).json({ error: "Booking not found" });
+    }
+
+    console.log(`Before cancel - User ${id} bookedFlights:`, user.bookedFlights);
+    user.bookedFlights = user.bookedFlights.filter((f) => f.bFId !== bFId);
+    console.log(`After cancel - User ${id} bookedFlights:`, user.bookedFlights);
+
+    writeData(data);
+    console.log(`Booking ${bFId} cancelled successfully for user ${id}`);
+
+    res.json({ message: "Booking cancelled", bookedFlights: user.bookedFlights });
+  } catch (error) {
+    console.error("Error during cancellation:", error);
+    res.status(500).json({ error: "Internal server error" });
   }
-
-  const data = readData();
-  const user = data.users.find((u) => u.id === parseInt(id));
-
-  if (!user) {
-    return res.status(404).json({ error: "User not found" });
-  }
-
-  user.bookedFlights = user.bookedFlights.filter((f) => f.id !== parseInt(flightId));
-  console.log("After cancel:", user.bookedFlights);
-  console.log("flightId to delete:", flightId);
-console.log("bookedFlights before delete:", user.bookedFlights);
-
-
-  writeData(data);
-
-  res.json({ message: "Booking cancelled", bookedFlights: user.bookedFlights });
 });
 
 

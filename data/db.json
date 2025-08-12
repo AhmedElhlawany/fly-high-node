@@ -1,437 +1,435 @@
 {
   "flights": [
-    [
-      {
-        "id": 2001,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "09:00",
-        "arrivalTime": "13:30",
-        "price": 350,
-        "airline": "Emirates"
+    {
+      "id": 2001,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
       },
-      {
-        "id": 2002,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "14:30",
-        "arrivalTime": "19:30",
-        "price": 320,
-        "airline": "Etihad Airways"
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
       },
-      {
-        "id": 2003,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "18:00",
-        "arrivalTime": "22:15",
-        "price": 380,
-        "airline": "Qatar Airways",
-        "transit": {
-          "transitCity": "Doha",
-          "transitAirport": {
-            "code": "DOH",
-            "name": "Hamad International Airport"
-          },
-          "transitDuration": "1h 30m"
-        }
+      "date": "2025-09-01",
+      "departureTime": "09:00",
+      "arrivalTime": "13:30",
+      "price": 4200,
+      "airline": "Emirates"
+    },
+    {
+      "id": 2002,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
       },
-      {
-        "id": 2004,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DWC",
-          "name": "Al Maktoum International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "03:00",
-        "arrivalTime": "07:00",
-        "price": 300,
-        "airline": "FlyDubai"
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
       },
-      {
-        "id": 2005,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Tokyo",
-        "toAirport": {
-          "code": "HND",
-          "name": "Haneda Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "22:00",
-        "arrivalTime": "14:30",
-        "price": 990,
-        "airline": "Emirates",
-        "transit": {
-          "transitCity": "Dubai",
-          "transitAirport": {
-            "code": "DXB",
-            "name": "Dubai International Airport"
-          },
-          "transitDuration": "4h 00m"
-        }
+      "date": "2025-09-01",
+      "departureTime": "14:30",
+      "arrivalTime": "19:30",
+      "price": 320,
+      "airline": "Etihad Airways"
+    },
+    {
+      "id": 2003,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
       },
-      {
-        "id": 2006,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Tokyo",
-        "toAirport": {
-          "code": "NRT",
-          "name": "Narita International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "01:30",
-        "arrivalTime": "18:10",
-        "price": 1050,
-        "airline": "Qatar Airways",
-        "transit": {
-          "transitCity": "Doha",
-          "transitAirport": {
-            "code": "DOH",
-            "name": "Hamad International Airport"
-          },
-          "transitDuration": "3h 30m"
-        }
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
       },
-      {
-        "id": 2007,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
+      "date": "2025-09-01",
+      "departureTime": "18:00",
+      "arrivalTime": "22:15",
+      "price": 380,
+      "airline": "Qatar Airways",
+      "transit": {
+        "transitCity": "Doha",
+        "transitAirport": {
+          "code": "DOH",
+          "name": "Hamad International Airport"
         },
-        "to": "Tokyo",
-        "toAirport": {
-          "code": "HND",
-          "name": "Haneda Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "09:45",
-        "arrivalTime": "02:30",
-        "price": 980,
-        "airline": "Etihad Airways",
-        "transit": {
-          "transitCity": "Abu Dhabi",
-          "transitAirport": {
-            "code": "AUH",
-            "name": "Abu Dhabi International Airport"
-          },
-          "transitDuration": "3h 45m"
-        }
-      },
-      {
-        "id": 2008,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Tokyo",
-        "toAirport": {
-          "code": "NRT",
-          "name": "Narita International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "16:00",
-        "arrivalTime": "08:45",
-        "price": 1010,
-        "airline": "Japan Airlines",
-        "transit": {
-          "transitCity": "Dubai",
-          "transitAirport": {
-            "code": "DXB",
-            "name": "Dubai International Airport"
-          },
-          "transitDuration": "4h 15m"
-        }
-      },
-      {
-        "id": 2009,
-        "from": "Tokyo",
-        "fromAirport": {
-          "code": "HND",
-          "name": "Haneda Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "10:00",
-        "arrivalTime": "20:00",
-        "price": 940,
-        "airline": "Emirates",
-        "transit": {
-          "transitCity": "Bangkok",
-          "transitAirport": {
-            "code": "BKK",
-            "name": "Suvarnabhumi Airport"
-          },
-          "transitDuration": "2h 15m"
-        }
-      },
-      {
-        "id": 2010,
-        "from": "Tokyo",
-        "fromAirport": {
-          "code": "NRT",
-          "name": "Narita International Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "03:00",
-        "arrivalTime": "13:30",
-        "price": 900,
-        "airline": "Qatar Airways",
-        "transit": {
-          "transitCity": "Doha",
-          "transitAirport": {
-            "code": "DOH",
-            "name": "Hamad International Airport"
-          },
-          "transitDuration": "2h 00m"
-        }
-      },
-      {
-        "id": 2017,
-        "from": "Alexandria",
-        "fromAirport": {
-          "code": "HBE",
-          "name": "Borg El Arab International Airport"
-        },
-        "to": "Paris",
-        "toAirport": {
-          "code": "ORY",
-          "name": "Paris Orly Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "06:00",
-        "arrivalTime": "12:40",
-        "price": 480,
-        "airline": "Air France"
-      },
-      {
-        "id": 2018,
-        "from": "Alexandria",
-        "fromAirport": {
-          "code": "HBE",
-          "name": "Borg El Arab International Airport"
-        },
-        "to": "Paris",
-        "toAirport": {
-          "code": "CDG",
-          "name": "Paris Charles de Gaulle Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "10:00",
-        "arrivalTime": "16:40",
-        "price": 510,
-        "airline": "Lufthansa",
-        "transit": {
-          "transitCity": "Frankfurt",
-          "transitAirport": {
-            "code": "FRA",
-            "name": "Frankfurt Airport"
-          },
-          "transitDuration": "1h 40m"
-        }
-      },
-      {
-        "id": 2025,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Istanbul",
-        "toAirport": {
-          "code": "SAW",
-          "name": "Sabiha Gökçen International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "08:30",
-        "arrivalTime": "12:15",
-        "price": 300,
-        "airline": "Turkish Airlines",
-        "transit": {
-          "transitCity": "Athens",
-          "transitAirport": {
-            "code": "ATH",
-            "name": "Athens International Airport"
-          },
-          "transitDuration": "1h 10m"
-        }
-      },
-      {
-        "id": 2026,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Istanbul",
-        "toAirport": {
-          "code": "IST",
-          "name": "Istanbul Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "03:00",
-        "arrivalTime": "06:30",
-        "price": 280,
-        "airline": "EgyptAir"
-      },
-      {
-        "id": 2027,
-        "from": "Cairo",
-        "fromAirport": {
-          "code": "CAI",
-          "name": "Cairo International Airport"
-        },
-        "to": "Istanbul",
-        "toAirport": {
-          "code": "SAW",
-          "name": "Sabiha Gökçen International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "14:00",
-        "arrivalTime": "17:20",
-        "price": 320,
-        "airline": "Pegasus Airlines"
-      },
-      {
-        "id": 2033,
-        "from": "Dubai",
-        "fromAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "to": "New York",
-        "toAirport": {
-          "code": "EWR",
-          "name": "Newark Liberty International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "08:00",
-        "arrivalTime": "18:45",
-        "price": 900,
-        "airline": "Emirates",
-        "transit": {
-          "transitCity": "Frankfurt",
-          "transitAirport": {
-            "code": "FRA",
-            "name": "Frankfurt Airport"
-          },
-          "transitDuration": "2h 20m"
-        }
-      },
-      {
-        "id": 2034,
-        "from": "Dubai",
-        "fromAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "to": "New York",
-        "toAirport": {
-          "code": "JFK",
-          "name": "John F. Kennedy International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "02:00",
-        "arrivalTime": "12:55",
-        "price": 920,
-        "airline": "Etihad Airways",
-        "transit": {
-          "transitCity": "Abu Dhabi",
-          "transitAirport": {
-            "code": "AUH",
-            "name": "Abu Dhabi International Airport"
-          },
-          "transitDuration": "2h 30m"
-        }
-      },
-      {
-        "id": 2065,
-        "from": "London",
-        "fromAirport": {
-          "code": "LGW",
-          "name": "London Gatwick Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "20:30",
-        "arrivalTime": "06:00",
-        "price": 580,
-        "airline": "British Airways"
-      },
-      {
-        "id": 2066,
-        "from": "London",
-        "fromAirport": {
-          "code": "LHR",
-          "name": "London Heathrow Airport"
-        },
-        "to": "Dubai",
-        "toAirport": {
-          "code": "DXB",
-          "name": "Dubai International Airport"
-        },
-        "date": "2025-09-01",
-        "departureTime": "08:00",
-        "arrivalTime": "17:45",
-        "price": 600,
-        "airline": "Emirates"
+        "transitDuration": "1h 30m"
       }
-    ],
+    },
+    {
+      "id": 2004,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DWC",
+        "name": "Al Maktoum International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "03:00",
+      "arrivalTime": "07:00",
+      "price": 300,
+      "airline": "FlyDubai"
+    },
+    {
+      "id": 2005,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Tokyo",
+      "toAirport": {
+        "code": "HND",
+        "name": "Haneda Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "22:00",
+      "arrivalTime": "14:30",
+      "price": 35640,
+      "airline": "Emirates",
+      "transit": {
+        "transitCity": "Dubai",
+        "transitAirport": {
+          "code": "DXB",
+          "name": "Dubai International Airport"
+        },
+        "transitDuration": "4h 00m"
+      }
+    },
+    {
+      "id": 2006,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Tokyo",
+      "toAirport": {
+        "code": "NRT",
+        "name": "Narita International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "01:30",
+      "arrivalTime": "18:10",
+      "price": 1050,
+      "airline": "Qatar Airways",
+      "transit": {
+        "transitCity": "Doha",
+        "transitAirport": {
+          "code": "DOH",
+          "name": "Hamad International Airport"
+        },
+        "transitDuration": "3h 30m"
+      }
+    },
+    {
+      "id": 2007,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Tokyo",
+      "toAirport": {
+        "code": "HND",
+        "name": "Haneda Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "09:45",
+      "arrivalTime": "02:30",
+      "price": 980,
+      "airline": "Etihad Airways",
+      "transit": {
+        "transitCity": "Abu Dhabi",
+        "transitAirport": {
+          "code": "AUH",
+          "name": "Abu Dhabi International Airport"
+        },
+        "transitDuration": "3h 45m"
+      }
+    },
+    {
+      "id": 2008,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Tokyo",
+      "toAirport": {
+        "code": "NRT",
+        "name": "Narita International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "16:00",
+      "arrivalTime": "08:45",
+      "price": 1010,
+      "airline": "Japan Airlines",
+      "transit": {
+        "transitCity": "Dubai",
+        "transitAirport": {
+          "code": "DXB",
+          "name": "Dubai International Airport"
+        },
+        "transitDuration": "4h 15m"
+      }
+    },
+    {
+      "id": 2009,
+      "from": "Tokyo",
+      "fromAirport": {
+        "code": "HND",
+        "name": "Haneda Airport"
+      },
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "10:00",
+      "arrivalTime": "20:00",
+      "price": 1880,
+      "airline": "Emirates",
+      "transit": {
+        "transitCity": "Bangkok",
+        "transitAirport": {
+          "code": "BKK",
+          "name": "Suvarnabhumi Airport"
+        },
+        "transitDuration": "2h 15m"
+      }
+    },
+    {
+      "id": 2010,
+      "from": "Tokyo",
+      "fromAirport": {
+        "code": "NRT",
+        "name": "Narita International Airport"
+      },
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "03:00",
+      "arrivalTime": "13:30",
+      "price": 900,
+      "airline": "Qatar Airways",
+      "transit": {
+        "transitCity": "Doha",
+        "transitAirport": {
+          "code": "DOH",
+          "name": "Hamad International Airport"
+        },
+        "transitDuration": "2h 00m"
+      }
+    },
+    {
+      "id": 2017,
+      "from": "Alexandria",
+      "fromAirport": {
+        "code": "HBE",
+        "name": "Borg El Arab International Airport"
+      },
+      "to": "Paris",
+      "toAirport": {
+        "code": "ORY",
+        "name": "Paris Orly Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "06:00",
+      "arrivalTime": "12:40",
+      "price": 480,
+      "airline": "Air France"
+    },
+    {
+      "id": 2018,
+      "from": "Alexandria",
+      "fromAirport": {
+        "code": "HBE",
+        "name": "Borg El Arab International Airport"
+      },
+      "to": "Paris",
+      "toAirport": {
+        "code": "CDG",
+        "name": "Paris Charles de Gaulle Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "10:00",
+      "arrivalTime": "16:40",
+      "price": 510,
+      "airline": "Lufthansa",
+      "transit": {
+        "transitCity": "Frankfurt",
+        "transitAirport": {
+          "code": "FRA",
+          "name": "Frankfurt Airport"
+        },
+        "transitDuration": "1h 40m"
+      }
+    },
+    {
+      "id": 2025,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Istanbul",
+      "toAirport": {
+        "code": "SAW",
+        "name": "Sabiha Gökçen International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "08:30",
+      "arrivalTime": "12:15",
+      "price": 300,
+      "airline": "Turkish Airlines",
+      "transit": {
+        "transitCity": "Athens",
+        "transitAirport": {
+          "code": "ATH",
+          "name": "Athens International Airport"
+        },
+        "transitDuration": "1h 10m"
+      }
+    },
+    {
+      "id": 2026,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Istanbul",
+      "toAirport": {
+        "code": "IST",
+        "name": "Istanbul Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "03:00",
+      "arrivalTime": "06:30",
+      "price": 280,
+      "airline": "EgyptAir"
+    },
+    {
+      "id": 2027,
+      "from": "Cairo",
+      "fromAirport": {
+        "code": "CAI",
+        "name": "Cairo International Airport"
+      },
+      "to": "Istanbul",
+      "toAirport": {
+        "code": "SAW",
+        "name": "Sabiha Gökçen International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "14:00",
+      "arrivalTime": "17:20",
+      "price": 320,
+      "airline": "Pegasus Airlines"
+    },
+    {
+      "id": 2033,
+      "from": "Dubai",
+      "fromAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "to": "New York",
+      "toAirport": {
+        "code": "EWR",
+        "name": "Newark Liberty International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "08:00",
+      "arrivalTime": "18:45",
+      "price": 900,
+      "airline": "Emirates",
+      "transit": {
+        "transitCity": "Frankfurt",
+        "transitAirport": {
+          "code": "FRA",
+          "name": "Frankfurt Airport"
+        },
+        "transitDuration": "2h 20m"
+      }
+    },
+    {
+      "id": 2034,
+      "from": "Dubai",
+      "fromAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "to": "New York",
+      "toAirport": {
+        "code": "JFK",
+        "name": "John F. Kennedy International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "02:00",
+      "arrivalTime": "12:55",
+      "price": 920,
+      "airline": "Etihad Airways",
+      "transit": {
+        "transitCity": "Abu Dhabi",
+        "transitAirport": {
+          "code": "AUH",
+          "name": "Abu Dhabi International Airport"
+        },
+        "transitDuration": "2h 30m"
+      }
+    },
+    {
+      "id": 2065,
+      "from": "London",
+      "fromAirport": {
+        "code": "LGW",
+        "name": "London Gatwick Airport"
+      },
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "20:30",
+      "arrivalTime": "06:00",
+      "price": 580,
+      "airline": "British Airways"
+    },
+    {
+      "id": 2066,
+      "from": "London",
+      "fromAirport": {
+        "code": "LHR",
+        "name": "London Heathrow Airport"
+      },
+      "to": "Dubai",
+      "toAirport": {
+        "code": "DXB",
+        "name": "Dubai International Airport"
+      },
+      "date": "2025-09-01",
+      "departureTime": "08:00",
+      "arrivalTime": "17:45",
+      "price": 600,
+      "airline": "Emirates"
+    },
     {
       "id": 2067,
       "from": "London",
@@ -5821,14 +5819,144 @@
         {
           "id": 2001,
           "from": "Cairo",
+          "fromAirport": {
+            "code": "CAI",
+            "name": "Cairo International Airport"
+          },
           "to": "Dubai",
+          "toAirport": {
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          },
           "date": "2025-09-01",
           "departureTime": "09:00",
           "arrivalTime": "13:30",
-          "price": 350,
+          "price": 1400,
+          "airline": "Emirates",
+          "adults": 4,
+          "children": 0,
+          "bFId": "1e25b2d8-33ba-424e-ba54-041413fb91b2"
+        },
+        {
+          "id": 2005,
+          "from": "Cairo",
+          "fromAirport": {
+            "code": "CAI",
+            "name": "Cairo International Airport"
+          },
+          "to": "Tokyo",
+          "toAirport": {
+            "code": "HND",
+            "name": "Haneda Airport"
+          },
+          "date": "2025-09-01",
+          "departureTime": "22:00",
+          "arrivalTime": "14:30",
+          "price": 35640,
+          "airline": "Emirates",
+          "transit": {
+            "transitCity": "Dubai",
+            "transitAirport": {
+              "code": "DXB",
+              "name": "Dubai International Airport"
+            },
+            "transitDuration": "4h 00m"
+          },
+          "adults": 4,
+          "children": 0,
+          "bFId": "172c4a93-ec72-453d-a23e-31c3747f0ee6"
+        },
+        {
+          "id": 2009,
+          "from": "Tokyo",
+          "fromAirport": {
+            "code": "HND",
+            "name": "Haneda Airport"
+          },
+          "to": "Dubai",
+          "toAirport": {
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "date": "2025-09-01",
+          "departureTime": "10:00",
+          "arrivalTime": "20:00",
+          "price": 1880,
+          "airline": "Emirates",
+          "transit": {
+            "transitCity": "Bangkok",
+            "transitAirport": {
+              "code": "BKK",
+              "name": "Suvarnabhumi Airport"
+            },
+            "transitDuration": "2h 15m"
+          },
+          "adults": 2,
+          "children": 0,
+          "bFId": "fe24f8f1-bb15-4ad5-bb8c-8e2044c0c569"
+        },
+        {
+          "id": 2001,
+          "from": "Cairo",
+          "fromAirport": {
+            "code": "CAI",
+            "name": "Cairo International Airport"
+          },
+          "to": "Dubai",
+          "toAirport": {
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "date": "2025-09-01",
+          "departureTime": "09:00",
+          "arrivalTime": "13:30",
+          "price": 1400,
           "airline": "Emirates",
           "adults": 1,
-          "children": 0
+          "children": 0,
+          "bFId": "e4881cb3-87cb-4c5e-a0fa-15ddd69045fc"
+        },
+        {
+          "id": 2066,
+          "from": "London",
+          "fromAirport": {
+            "code": "LHR",
+            "name": "London Heathrow Airport"
+          },
+          "to": "Dubai",
+          "toAirport": {
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "date": "2025-09-01",
+          "departureTime": "08:00",
+          "arrivalTime": "17:45",
+          "price": 600,
+          "airline": "Emirates",
+          "adults": 1,
+          "children": 0,
+          "bFId": "22639068-cb9e-4845-88eb-eeba6c332e77"
+        },
+        {
+          "id": 2002,
+          "from": "Cairo",
+          "fromAirport": {
+            "code": "CAI",
+            "name": "Cairo International Airport"
+          },
+          "to": "Dubai",
+          "toAirport": {
+            "code": "DXB",
+            "name": "Dubai International Airport"
+          },
+          "date": "2025-09-01",
+          "departureTime": "14:30",
+          "arrivalTime": "19:30",
+          "price": 320,
+          "airline": "Etihad Airways",
+          "adults": 1,
+          "children": 0,
+          "bFId": "ff79c78f-1be5-48e9-a901-1e770bf5547d"
         }
       ],
       "bookedHotels": [
@@ -5978,34 +6106,7 @@
         }
       ],
       "bookedFlights": [
-        {
-          "id": 2076,
-          "from": "New York",
-          "fromAirport": {
-            "code": "EWR",
-            "name": "Newark Liberty International Airport"
-          },
-          "to": "Cairo",
-          "toAirport": {
-            "code": "CAI",
-            "name": "Cairo International Airport"
-          },
-          "date": "2025-09-01",
-          "departureTime": "18:00",
-          "arrivalTime": "12:00",
-          "price": 970,
-          "airline": "Qatar Airways",
-          "transit": {
-            "transitCity": "Doha",
-            "transitAirport": {
-              "code": "DOH",
-              "name": "Hamad International Airport"
-            },
-            "transitDuration": "2h 50m"
-          },
-          "adults": 1,
-          "children": 0
-        }
+       
       ],
       "bookedHotels": []
     },
